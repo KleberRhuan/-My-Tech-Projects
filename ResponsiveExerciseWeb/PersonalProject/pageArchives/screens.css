@@ -1,0 +1,119 @@
+@media screen and (max-width: 1056px) {
+    .navbar-nav.icons {
+      display: none;
+    }
+  
+  }
+  
+    @media screen and (max-width: 991px) {
+  
+      .navbar-nav {
+        display: grid;
+        justify-content: end;
+        margin-right: 1rem;
+      }
+       
+  
+      .nav-item.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        width: 3rem;
+        background-color: darkgray;
+        border-radius: 1rem;
+      }
+  
+    .scroll-down{
+      display: none;
+    }
+  
+    #content1{
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+  
+    }
+  
+    #title{
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+   
+    #title2{
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+   
+    #bttn-act{
+      font-size: 1.5rem;
+      margin: 6rem 0 1rem 0;
+    }
+  
+    }
+  
+    @media screen and (max-width: 500px){
+      #title{
+        font-size: 3rem;
+      }
+     
+      #title2{
+        font-size: 1.5rem;
+      }
+     
+      #bttn-act{
+        margin-top: 8rem;
+        font-size: 1.70rem;
+      }
+  
+      .nav-item.active::after {
+       display: none;
+      }
+  
+      .navbar-nav {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: end;
+        margin-right: 0.5rem;
+        font-size: 1rem;
+      }
+    } 
+
+    @media screen and (max-width: 370px) {
+        #title{
+            font-size: 3rem;
+            margin: 1rem 0;
+          }
+         
+          #title2{
+            font-size: 1rem;
+            margin: 1rem 0;
+          }
+         
+          #bttn-act{
+            font-size: 1rem;
+            margin: 6rem 0 1rem 0;
+            width: 10rem;
+           height: 4.125rem;
+          }
+
+          .logo, .navbar-brand{
+            width: 8rem;
+          }
+
+         .navbar-toggler{
+          width: 1rem;
+          height: 2rem;
+          background-image: url('/img/menu-hamburguer.svg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 4px;
+          border: none;
+         }
+
+          .navbar-toggler-icon{
+              display: none;
+          }
+    }

@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  color: black;
+  font-family: 'Fira Sans', sans-serif;
+  overflow-x: hidden; 
+}
+
+bubles {
+  border-radius:100%;
+  position: absolute;
+  pointer-events: none;
+  background: lightblue;
+  box-shadow:  5px 5px 10px lightblue, 
+             -5px -5px 10px blue;
+  transform: translate(-50%, -50%);
+  animation: colorgen 0.5s infinite;
+}
+
+@keyframes colorgen {
+  0% {
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    filter: hue-rotate(280deg);
+  }
+}
+
+.bgcolor.scrolled{
+  background-color: #fff;
+}
+
+.bg-image{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+nav{
+    font-family: 'Cinzel Decorative', serif;
+    height: 7vh;
+    width: 100vw;
+}
+
+.navbar-brand{
+  margin-left: 2rem;
+}
+
+.icon{
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+}
+
+
+.ulfirst{
+    margin: 0 4em;
+}
+
+.navbar{
+  transition: 0.4s;
+}
+
+.navbar-nav{
+  font-size: 1.5rem;
+}
+
+.nav-item.active {
+    position: relative;
+  }
+  
+  .nav-item.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: black;
+    border-radius: 1rem;
+  }
+  
+  #content1{
+    font-family: 'Cinzel Decorative', serif;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+   }
+  
+    #title{
+      margin: 7% 0 0 12rem;
+      font-size: 5rem;
+    }
+   
+    #title2{
+      margin: 1rem 0 0 12rem;
+      font-size: 3rem;
+    }
+   
+    #bttn-act{
+      font-weight: bold;
+      letter-spacing: 0.25rem;
+      text-transform: uppercase;
+      font-family: 'Fira Sans', sans-serif;
+      margin: 1rem 0 0 12rem;
+      width: 16.8rem;
+      height: 4.125rem;
+      font-size: 1.6rem;
+      border: 2px solid black;
+    }
+  
+    #bttn-act:hover{
+      background-color: white;
+    }
+  
+
+
+  .vertical-text{
+  writing-mode: vertical-lr;
+  font-size: 1.5rem;
+  font-weight: 400;
+  }
+
+  .scroll-down{
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  right: 2rem;
+  bottom: 2rem;
+  position: absolute;
+}
+
+.scroll-down:hover .arrow svg {
+  fill: #fff;
+}
+
+.scroll-down:hover .arrow svg path {
+  fill-opacity: 1;
+}
+
+
+.navbar-toggler{
+  margin-right: 1rem;
+}
+
+.atividades{
+  font-family: 'Cinzel Decorative', serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+
+.atividades h2 { 
+  margin-top: 6rem;
+}
+
+.white-board{
+  height: 80vh;
+  width: 90vw;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.white-board h5 {
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+footer{
+  font-family: 'Cinzel Decorative', serif;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+footer p{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.one-column{
+  padding: 1rem 0 0 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
