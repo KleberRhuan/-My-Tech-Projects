@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikcraft - Bicicletas Eletricas</title>
+    <meta
+      name="description"
+      content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft."
+    />
+    <link rel="stylesheet" href="./typography.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- CSS only -->
+    <link
+      href="bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9Q2oGaqnCnKfN80WTYaH3+Fz3Y7fi4mQH55K7nZ5b5uUt7RRE26OKOhuV1IkDqn/"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript bundle (contains Popper) -->
+    <script
+      src="bootstrap/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-wc0clV7iAf5XTSj5FSsggkO5pV7cB+ATugRvn+tawFHhNtB1bsL+1XrHYrKg2Qm/"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="<%= require('./images/bikcraft.svg') %>" alt="Logo do Bikcraft"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon navbar-toggler-white"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-content" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bicicletas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Seguros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <article class="intro-bg" aria-label="Introducao">
+          <div class="intro">
+            <div class="intro-container">
+              <h1 class="title-home">
+                Bicicletas feitas sob medida <span class="golden">.</span>
+              </h1>
+              <p>
+                Bicicletas elétricas de alta precisão e qualidade, feitas sob
+                medida para o cliente. Explore o mundo na sua velocidade com a
+                Bikcraft.
+              </p>
+              <button class="button-type-1" type="button" id="bttn-intro">
+                selecione a sua
+              </button>
+            </div>
+            <div class="intro-img">
+              <img
+                src="<%= require('./images/fotos/introducao.jpg') %>"
+                alt="Foto de uma Bicicleta"
+                id="intro-img"
+              />
+            </div>
+            <img src="<%= require('./images/dec.svg') %>" class="intro-svg" />
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <article aria-label="escolha a sua">
+          <div class="container-fluid choose-container">
+            <h2 id="title-choose">escolha a sua<span class="golden">.</span></h2>
+            <div id="container-products" class="choose-container-products">
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./firebase.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="products.js" type="module"></script>
+  </body>
+</html>

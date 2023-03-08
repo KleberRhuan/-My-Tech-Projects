@@ -1,0 +1,28 @@
+:root {
+    /* Colors */
+
+    --text-gray-color: #9C9C9C;
+    --text-white: #FFFFFF;
+    --color-black: #000000;
+    --color-black-2: #111111;
+    --color-golden: #FFBB00;
+    --color-button: linear-gradient(180deg, #FFBF00 0%, #F2A50C 100%);
+    --color-button-text: #332200;
+
+    /* Fonts */
+
+    --font-1-xxl: 600 64px/72px 'Poppins', sans-serif;
+    --font-1-xl: 600 32px/40px 'Poppins', sans-serif;
+    --font-1-l: 400 24px/36px 'Poppins', sans-serif;
+    --font-2-l: 400 24px/36px 'Roboto', sans-serif;
+    --font-2-l-b: 500 24px/36px 'Roboto', sans-serif;
+    --font-1-m: 400 18px/24px 'Poppins', sans-serif;
+    --font-1-m-b: 600 18px/24px 'Poppins', sans-serif;
+    --font-2-m: 500 18px/24px 'Roboto', sans-serif;
+    --font-1-s: 400 16px/24px 'Poppins', sans-serif;
+    --font-2-s: 400 16px/24px 'Roboto', sans-serif;
+    --font-2-xs: 400 14px/20px 'Roboto', sans-serif;
+    --font-1-xs: 600 12px/16px 'Poppins', sans-serif;
+    --font-nav-item: 500 18px/32px 'Poppins', sans-serif;
+
+}
